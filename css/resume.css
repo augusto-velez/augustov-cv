@@ -15,6 +15,7 @@ body {
     padding-top: 0;
     padding-left: 17rem;
   }
+
 }
 
 h1,
@@ -83,6 +84,14 @@ p.lead {
   color: #336699;
 }
 
+.navbar{
+    top: 1.5rem;
+    left: 1.5rem;
+    bottom: 14rem;
+    border-radius: 10px;
+    height: 93%;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -93,12 +102,23 @@ p.lead {
   outline-color: #d48a6e;
 }
 
+.navbar {
+   top: 0;
+   left: 0;
+   bottom: 0;
+   border-radius: unset;
+   height: max-content;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 1.5rem;
+    left: 1.5rem;
+    bottom: 14rem;
+    border-radius: 10px;
+    height: 93%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,7 +127,9 @@ p.lead {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 17rem;
-    height: 100vh;
+    -moz-box-shadow:    4px 3px 4px 4px #ccc;
+    -webkit-box-shadow: 4px 3px 4px 4px #ccc;
+    box-shadow:         4px 3px 4px 4px #ccc;
   }
   #sideNav .navbar-brand {
     display: -webkit-box;
@@ -117,9 +139,9 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    max-width: 11rem;
+    max-height: 11rem;
+    border: 0.5rem solid rgba(0,0,0,.075);
   }
   #sideNav .navbar-collapse {
     display: -webkit-box;
@@ -149,6 +171,10 @@ p.lead {
   }
 }
 
+.card-body > li {
+  font-size: 1.8rem;
+}
+
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
@@ -172,6 +198,7 @@ section.resume-section .resume-item .resume-date {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+    padding-left: 3.8rem !important;
   }
 }
 
