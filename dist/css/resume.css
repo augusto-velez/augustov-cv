@@ -10,6 +10,35 @@ body {
   color: #868e96;
 }
 
+body.darkmode {
+  background-color: #224466;
+}
+
+body.darkmode p.card-text {
+  color: #868e96;
+}
+
+body.darkmode .card-body li.list-inline-item {
+  color: #868e96;
+}
+
+body.darkmode .text-primary {
+  color: #a1cefd!important
+}
+
+body.darkmode .card {
+  border: 0px solid rgba(0,0,0,.125);
+}
+
+
+body.darkmode h1,
+body.darkmode h2,
+body.darkmode h3,
+body.darkmode h4,
+body.darkmode h6 {
+  color: #eaebec;
+}
+
 h1,
 h2,
 h3,
@@ -94,6 +123,12 @@ p.lead {
   outline-color: #d48a6e;
 }
 
+/* darkmode
+shadow: #3333336e
+background-color: #224466
+h1 color: #d2d5d8
+*/
+
 .navbar {
    top: 0;
    left: 0;
@@ -136,9 +171,77 @@ section.resume-section .resume-item .resume-date {
   transition: background-color 400ms linear;
 }
 
+/* Switch start */
+.darkmode {
+  color: rgba(247, 247, 247, 0.85);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 28px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #497cb3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #497cb3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* Switch end */
+
 
 .nav-link.active {
-  background: #497cb3;
+  background: #336699;
   border-radius: 16px;
   -webkit-transition: background-color 400ms linear;
   -ms-transition: background-color 400ms linear;
@@ -153,7 +256,36 @@ a:hover, a:focus, a:active {
   color: #003366;
 }
 
+.darkmodeslider {
+  display: none;
+}
+
+label {
+  margin-bottom: 0;
+}
+
 @media (min-width: 992px) {
+
+  .nav-link.active {
+    background: #497cb3;
+    border-radius: 16px;
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+  }
+
+  .darkmodeslider {
+    display: block;
+    padding-top: 25px;
+    margin-bottom: 4px;
+    color: rgba(247, 247, 247, 0.85);
+  }
+
+  #slideNav#darkmode {
+    box-shadow: 4px 3px 4px 4px #3333336e !important;
+    -webkit-box-shadow: 4px 3px 4px 4px #3333336e !important;
+  }
+
   body {
     padding-top: 0;
     padding-left: 17rem;
