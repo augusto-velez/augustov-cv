@@ -30,6 +30,10 @@ body.darkmode .card {
   border: 0px solid rgba(0,0,0,.125);
 }
 
+body.darkmode a {
+  color: #a1cefd!important
+}
+
 
 body.darkmode h1,
 body.darkmode h2,
