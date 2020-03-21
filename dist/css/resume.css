@@ -73,6 +73,12 @@ p.lead {
   font-weight: 400;
 }
 
+.container-fluid {
+  width: 100%;
+  padding-right: 95px;
+  padding-left: 95px;
+}
+
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
@@ -127,6 +133,10 @@ p.lead {
   outline-color: #d48a6e;
 }
 
+.card-img-top {
+  height: 190px;
+}
+
 /* darkmode
 shadow: #3333336e
 background-color: #224466
@@ -168,7 +178,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .nav-link {
-  border-radius: 16px;
+  border-radius: 5px;
   background: #336699;
   -webkit-transition: background-color 400ms linear;
   -ms-transition: background-color 400ms linear;
@@ -240,13 +250,18 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.card-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+}
 
 /* Switch end */
 
 
 .nav-link.active {
   background: #336699;
-  border-radius: 16px;
+  border-radius: 5px;
   -webkit-transition: background-color 400ms linear;
   -ms-transition: background-color 400ms linear;
   transition: background-color 400ms linear;
@@ -272,7 +287,7 @@ label {
 
   .nav-link.active {
     background: #497cb3;
-    border-radius: 16px;
+    border-radius: 5px;
     -webkit-transition: background-color 400ms linear;
     -ms-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
@@ -365,11 +380,17 @@ label {
     min-height: 100vh;
   }
   section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
+    min-width: 14rem;
   }
+  
 }
 
 @media (max-width: 490px) {
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
   .card {
     width: 100%;
   }
