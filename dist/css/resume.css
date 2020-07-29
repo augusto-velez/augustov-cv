@@ -310,9 +310,9 @@ label {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 17rem;
-    -moz-box-shadow:    4px 3px 4px 4px #ccc;
-    -webkit-box-shadow: 4px 3px 4px 4px #ccc;
-    box-shadow:         4px 3px 4px 4px #ccc;
+    -moz-box-shadow:    rgba(51, 51, 51, 0.43) 2px 1px 6px 2px;
+    -webkit-box-shadow: rgba(51, 51, 51, 0.43) 2px 1px 6px 2px;
+    box-shadow:         rgba(51, 51, 51, 0.43) 2px 1px 6px 2px;
   }
   #sideNav .navbar-brand {
     display: -webkit-box;
@@ -324,7 +324,7 @@ label {
   #sideNav .navbar-brand .img-profile {
     max-width: 11rem;
     max-height: 11rem;
-    border: 0.5rem solid rgba(0,0,0,.075);
+    box-shadow: rgba(51, 51, 51, 0.2) 1px 1px 4px 3px;
   }
   #sideNav .navbar-collapse {
     display: -webkit-box;
